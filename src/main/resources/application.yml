@@ -1,0 +1,11 @@
+server:
+    port: 8020
+spring:
+   cloud:
+      config:
+          uri: http://localhost:8001
+management:
+      endpoints:
+        web:
+          exposure:
+            include: 'hystrix.stream'
